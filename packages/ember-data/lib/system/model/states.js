@@ -372,7 +372,7 @@ var DirtyState = DS.State.extend({
       var record = get(manager, 'record');
 
       record.withTransaction(function (t) {
-        t.recordBecameClean('inflight', record);
+        t.recordIsMoving('inflight', record);
       });
     },
 
